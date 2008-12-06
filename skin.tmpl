@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>$WikiTitle: {$Group}/{$Titlespaced}</title>
+	<link rel="Shortcut Icon" href="" type="image/x-icon">
+	<style type="text/css" media="screen">
+		<!-- @import url("$SkinDirUrl/color-$SkinColor.css"); -->
+		<!-- @import url("$SkinDirUrl/style.css"); -->
+	</style>
+<!--HTMLHeader-->
+</head>
+
+<body>
+
+<div id="header">
+<!--PageHeaderFmt-->
+	<div class="headerleft">
+		<!--wiki:{$Group}.SiteHeader {$SiteGroup}.SiteHeader-->
+	</div>
+
+	<!--PageTabsFmt-->
+		<div class="headerright">
+			<!--wiki:{$Group}.SiteTabs {$SiteGroup}.SiteTabs-->					 
+		</div>
+	<!--/PageTabsFmt-->
+	
+<!--/PageHeaderFmt-->
+</div>
+
+<div id="content">
+
+	<div id="contentleft">
+		<!--PageTitleFmt-->
+			<a href='{$ScriptUrl}/{$Group}' class="pagegroup">{$Group}</a>
+			<h1><a href='{$ScriptUrl}/{$Group}.{$Title}'>{$Titlespaced}</a></h1>
+		<!--/PageTitleFmt-->
+		
+		<!--PageText-->
+	</div>
+
+	<div id="r_sidebar">
+		<ul>
+			<!--PageActionFmt-->
+			<li id="Actions">
+				<div class="pageactions">
+					<!--wiki:{$Group}.PageActions {$SiteGroup}.PageActions-->
+				</div>
+			</li>
+			<!--/PageActionFmt-->
+
+			<!--PageSearchFmt-->
+			<li id="Search">
+				<h2>Find It</h2>
+				<div class="search">
+					<form id="searchform" action='$ScriptUrl'>
+						<input type='hidden' name='n' value='{$FullName}' />
+						<input type='hidden' name='action' value='search' />
+						<input class='searchBox' type='text' name='q' value="" />
+						<input class='searchButton' type='submit' value='$[Go]' />
+					</form>
+				</div>
+			</li>
+			<!--/PageSearchFmt-->
+		</ul>
+		<!--PageRightFmt-->
+			<!--wiki:{$Group}.SkinSidebar {$SiteGroup}.SkinSidebar-->					 
+		<!--/PageRightFmt-->
+	</div>
+</div>
+
+<div style="clear: both;"></div>
+<div id="footerbg">
+<!--PageFooterFmt-->
+	<div id="footer">
+		<p><a href="http://www.briangardner.com/themes/dropshadow-wordpress-theme.htm" rel="nofollow" style="color:#fff;">Drop Shadow</a> adapted by <a href="http://skins.solidgone.com/">solidGone.org</a>, powered by <a href="http://pmwiki.com/">PmWiki</a>.</p>
+	</div>
+<!--/PageFooterFmt-->
+</div>
+
+
+</body></html>

@@ -1,0 +1,12 @@
+version=pmwiki-2.2.0-beta59 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4
+author=
+charset=ISO-8859-1
+csum=
+ctime=1227999692
+host=127.0.0.1
+name=Site.HeaderTabs
+rev=1
+targets=Main.Home,Main.About,Main.Contact
+text=* [[{$DefaultGroup}/Home]]%0a* [[{$DefaultGroup}/About]]%0a* [[{$DefaultGroup}/Contact]]%0a
+time=1227999812
