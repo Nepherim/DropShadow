@@ -1,4 +1,4 @@
-/* 
+/*
  * PmWiki DropShadow skin
  * @requires PmWiki 2.2
  *
@@ -91,12 +91,10 @@ a:hover	{
 	margin: 0px;
 	padding: 0px;
 	}
-		
 .headerright ul{
 	margin: 0px;
 	padding: 5px 10px 5px 10px;
 	}
-		
 .headerright a, .headerright a:visited{
 	color: #FFF;
 	font-weight: bold;
@@ -104,9 +102,11 @@ a:hover	{
 	padding: 5px 10px 5px 10px;
 	text-decoration: none;
 	}
-		
 .headerright a:hover{
 	text-decoration: none;
+	}
+.headerright li a.createlink{
+	display:none;
 	}
 
 /***********************************************
@@ -308,7 +308,7 @@ blockquote, .blockquote, pre{
 	}
 
 /***********************************************
-*	Footer		
+*	Footer
 ************************************************/
 #footerbg{
 	background: #333 url(images/bg2.gif) no-repeat top;
@@ -397,6 +397,7 @@ blockquote, .blockquote, pre{
 	margin: 3px 0px 20px 0px;
 	padding: 20px 10px 5px 10px;
 	width: 390px;
+	display: block;
 	background: #FFF url(images/comment.gif) no-repeat top;
 	}
 .commenttext-admin{
@@ -421,7 +422,7 @@ blockquote, .blockquote, pre{
 #commentsform p{
 	margin: 0px;
 	}
-#commentsform form textarea{
+#comment-text{
 	width: 99%;
 	}
 p.comments_link  img{
@@ -450,4 +451,9 @@ pre{
 	height:300px;
 	width:99%;
 	font-size:110%;
+	}
+.readmore {
+	display: block;
+	padding-bottom: 10px;
+	font-weight: bold;
 	}

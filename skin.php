@@ -11,7 +11,7 @@
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"dropshadow"';
-$FmtPV['$SkinVersion'] = '"0.0.1"';
+$FmtPV['$SkinVersion'] = '"0.1.0"';
 
 ## Default color scheme
 global $SkinColor, $ValidSkinColors;
@@ -24,11 +24,14 @@ if ( isset($_GET['color']) && in_array($_GET['color'], $ValidSkinColors) ) {
 }
 
 ## Move any (:noleft:) or SetTmplDisplay('PageLeftFmt', 0); directives to variables for access in jScript.
-global $RightColumn, $SearchBar;
 $FmtPV['$RightColumn'] = "\$GLOBALS['TmplDisplay']['PageRightFmt']";
+Markup('noright', 'directives',  '/\\(:noright:\\)/ei', "SetTmplDisplay('PageRightFmt',0)");
 $FmtPV['$SearchBar'] = "\$GLOBALS['TmplDisplay']['PageSearchFmt']";
+Markup('nosearch', 'directives',  '/\\(:nosearch:\\)/ei', "SetTmplDisplay('PageSearchFmt',0)");
 $FmtPV['$ActionBar'] = "\$GLOBALS['TmplDisplay']['PageActionFmt']";
+Markup('noaction', 'directives',  '/\\(:noaction:\\)/ei', "SetTmplDisplay('PageActionFmt',0)");
 $FmtPV['$TabsBar'] = "\$GLOBALS['TmplDisplay']['PageTabsFmt']";
+Markup('notabs', 'directives',  '/\\(:notabs:\\)/ei', "SetTmplDisplay('PageTabsFmt',0)");
 
 ## Add a custom page storage location
 global $PageStorePath, $WikiLibDirs;
