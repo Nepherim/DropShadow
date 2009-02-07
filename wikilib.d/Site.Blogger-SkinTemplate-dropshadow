@@ -1,15 +1,57 @@
 version=pmwiki-2.2.0-beta68 ordered=1 urlencoded=1
 agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4
-author=DaveG
+author=DG3
 charset=ISO-8859-1
 csum=
 ctime=1231895462
 host=127.0.0.1
 name=Site.Blogger-SkinTemplate-dropshadow
-rev=58
+rev=72
 targets=
-text=!!! #common-blog-foot%0a[@%0a(:if false:)[[#common-blog-foot]](:ifend:)%0a(:div9980 class="postmeta":)%0a(:div9981 class="postmetaleft":)%0a{(ftime fmt="%25B %25d, %25Y" when=@{$$entrydate})} \%0a(:if !equal "{$$entrytags}" "":)| $[Filed under]: {$$entrytags}(:ifend:)  \%0a(:if auth edit:)%25blogger-edit-link%25%25item accesskey="$[ak_edit]"%25[[{$$group}.{$$name}?action=bloggeredit | $[(edit)]]]%25%25(:ifend:)%0a(:div9981end:)%0a(:div9981 class="postmetaright":)Comment(s): (:includesection "#comments-count-pagelist entrygroup='{$$group}' entryname='{$$page}' commentstatus=true" {$Blogger_TemplateList}:)%0a(:div9981end:)%0a(:div9980end:)%0a[[#common-blog-footend]]%0a@]%0a%0a!!! #single-entry-view%0a[@%0a(:if false:)[[#single-entry-view]](:ifend:)%0a(:div9990 class="blogger-post":)%0a(:div9991 class="blogger-post-body":)%0a{*$:entrybody}%0a(:div9991end:)(:includesection "#common-blog-foot page={*$Name} group={*$Group} entrydate={*$:entrydate} entrytags='{*$:entrytags}'" {$Blogger_TemplateList}:)%0a(:div9990end:)%0a(:if !equal {*$:entrycomments} "{$Blogger_CommentType_NONE}":)%0a(:div9990 id="commentblock":)(:includesection "#comments-pagelist pagename={*$Name} group={*$Group}" {$Blogger_TemplateList}:)%0a(:ifend:)(:if [ equal "{*$:entrycomments}" "{$Blogger_CommentType_OPEN}" && equal "{$Blogger_CommentsEnabled}" "true" ] :)(:pmform {$Blogger_CommentForm}:)%0a(:div9990end:)%0a(:ifend:)%0a[[#single-entry-viewend]]%0a@]%0a%0a!!! #multi-entry-view%0a[@%0a(:if false:)[[#multi-entry-view]](:ifend:)%0a(:template defaults order=-$:entrydate:)%0a(:div9990 class="blogger-post-summary":)%0a!! [[{=$FullName}|{=$Title}]]%0a(:div9991 class="blogger-post-intro":)%0a(:blogger intro:){=$:entrybody}(:bloggerend:)%0a(:div9991end:)%0a(:div9991 class="blogger-post-footer":)%25blogger-more%25(:blogger more {=$FullName}:){=$:entrybody}(:bloggerend:)%25%25%0a(:div9991end:)%0a(:includesection "#common-blog-foot page={=$Name} group={=$Group} entrydate={=$:entrydate} entrytags='{=$:entrytags}'" {$Blogger_TemplateList}:)%0a(:div9990end:)\\%0a[[#multi-entry-viewend]]%0a@]%0a%0a!!! #comment-view%0a[@%0a(:if false:)[[#comment-view]](:ifend:)%0a(:template first:)%0a(:if equal {$$onlyunapproved} "false":)%0a!! $[Comments]%0a(:ifend:)%0a(:template each:)%0a(:if [ equal {$$onlyunapproved} "true" && !equal {(bloggerBasePage {=$FullName})} {(bloggerBasePage {%3c$FullName})} ]:)%0a!!! [[{(bloggerBasePage {=$FullName})} | {{(bloggerBasePage {=$FullName})}=$Title}]](:ifend:)%0a# %25apply=list class="commentlist"%25[[#T{=$:commentdate}]]By {=$Author}, on {(ftime fmt="{$Blogger_DateDisplayFormat}" when=@{=$:commentdate})} \%0a(:if [ auth admin && equal {=$:commentapproved} false ] :)\%0a[[{*$FullName}?action=bloggerapprove&pn={=$FullName} | $[approve]]] | [[{=$FullName}?action=edit | $[edit]]](:ifend:)%0a  %25commenttext%25(:blogger multiline:){=$:commenttext}(:bloggerend:)%25%25%0a(:template last:)%0a(:div9990end:)%0a[[#comment-viewend]]%0a@]%0a
-time=1231983530
+text=!!! #common-blog-foot%0a[@%0a(:if false:)[[#common-blog-foot]](:ifend:)%0a(:div9980 class="postmeta":)%0a(:div9981 class="postmetaleft":)%0a{(ftime fmt="%25B %25d, %25Y" when=@{$$date})} \%0a(:if !equal "{$$tags}" "":)| $[Tags]: {$$tags}(:ifend:)  \%0a(:if auth edit:)%25blogger-edit-link%25%25item accesskey="$[ak_edit]"%25[[{$$group}.{$$page}?action=bloggeredit | $[(edit)]]]%25%25(:ifend:)%0a(:div9981end:)%0a(:if [ !equal {$$comments} "{$Blogger_CommentType_NONE}" && equal {$Blogger_CommentsEnabled} true ] :)\%0a(:div9981 class="postmetaright":)Comment(s): (:includesection "#comments-count-pagelist entrygroup='{$$group}' entryname='{$$page}' commentstatus=true":)%0a(:div9981end:)(:ifend:)%0a(:div9980end:)%0a[[#common-blog-footend]]%0a@]%0a%0a!!! #single-entry-view%0a[@%0a(:if false:)[[#single-entry-view]](:ifend:)%0a(:div9990 class="blogger-post":)%0a(:div9991 class="blogger-post-body":)%0a{*$:entrybody}%0a(:div9991end:)(:includesection "#common-blog-foot page={*$Name} group={*$Group} date={*$:entrydate} tags='{*$:entrytags}'":)%0a(:div9990end:)%0a(:includesection "#comments-pagelist pagename={*$Name} group={*$Group} entrycomments={*$:entrycomments} divid=commentblock":)%0a[[#single-entry-viewend]]%0a@]%0a%0a!!! #multi-entry-view%0a[@%0a(:if false:)[[#multi-entry-view]](:ifend:)%0a(:template defaults order=-$:entrydate:)%0a(:div9990 class="blogger-post-summary":)%0a! [[{=$FullName}|{=$Title}]]%0a(:div9991 class="blogger-post-intro":)%0a(:blogger intro:){=$:entrybody}(:bloggerend:)%0a(:div9991end:)%0a(:div9991 class="blogger-post-footer":)%25blogger-more%25(:blogger more {=$FullName}:){=$:entrybody}(:bloggerend:)%25%25%0a(:div9991end:)%0a(:includesection "#common-blog-foot page={=$Name} group={=$Group} date={=$:entrydate} tags='{=$:entrytags}'":)%0a(:div9990end:)\\%0a[[#multi-entry-viewend]]%0a@]%0a%0a!!! #comment-view%0a[@%0a(:if false:)[[#comment-view]](:ifend:)%0a(:template first:)%0a(:if equal {$$onlyunapproved} "false":)%0a! $[Comments]%0a(:ifend:)%0a(:template each:)%0a(:if [ equal {$$onlyunapproved} "true" && !equal {(bloggerBasePage {=$FullName})} {(bloggerBasePage {%3c$FullName})} ]:)%0a!! [[{(bloggerBasePage {=$FullName})} | {{(bloggerBasePage {=$FullName})}=$Title}]](:ifend:)%0a# %25apply=list class="commentlist"%25[[#T{=$:commentdate}]]By {=$Author}, on {(ftime fmt="{$Blogger_DateDisplayFormat}" when=@{=$:commentdate})} \%0a(:if [ auth admin && equal {=$:commentapproved} false ] :)\%0a[[{*$FullName}?action=bloggerapprove&pn={=$FullName} | $[approve]]] | (:ifend:)\%0a(:if auth admin:)[[{=$FullName}?action=edit | $[edit]]](:ifend:)\%0a  %25commenttext%25(:blogger multiline:){=$:commenttext}(:bloggerend:)%25%25%0a(:template last:)%0a(:div9990end:)%0a[[#comment-viewend]]%0a@]%0a
+time=1233525365
+author:1233525365=DG3
+diff:1233525365:1233376411:=10d9%0a%3c (:if [ !equal {$$comments} "{$Blogger_CommentType_NONE}" && equal {$Blogger_CommentsEnabled} true ] :)\%0a12c11%0a%3c (:div9981end:)(:ifend:)%0a---%0a> (:div9981end:)%0a
+host:1233525365=127.0.0.1
+author:1233376411=DG3
+diff:1233376411:1232913387:=10c10%0a%3c (:div9981 class="postmetaright":)Comment(s): (:includesection "#comments-count-pagelist entrygroup='{$$group}' entryname='{$$page}' commentstatus=true":)%0a---%0a> (:div9981 class="postmetaright":)Comment(s): (:includesection "#comments-count-pagelist entrygroup='{$$group}' entryname='{$$page}' commentstatus=true" {$Blogger_TemplateList}:)%0a22c22%0a%3c (:div9991end:)(:includesection "#common-blog-foot page={*$Name} group={*$Group} date={*$:entrydate} tags='{*$:entrytags}'":)%0a---%0a> (:div9991end:)(:includesection "#common-blog-foot page={*$Name} group={*$Group} date={*$:entrydate} tags='{*$:entrytags}'" {$Blogger_TemplateList}:)%0a39c39%0a%3c (:includesection "#common-blog-foot page={=$Name} group={=$Group} date={=$:entrydate} tags='{=$:entrytags}'":)%0a---%0a> (:includesection "#common-blog-foot page={=$Name} group={=$Group} date={=$:entrydate} tags='{=$:entrytags}'" {$Blogger_TemplateList}:)%0a
+host:1233376411=127.0.0.1
+author:1232913387=DG3
+diff:1232913387:1232765312:=7c7%0a%3c (:if !equal "{$$tags}" "":)| $[Tags]: {$$tags}(:ifend:)  \%0a---%0a> (:if !equal "{$$tags}" "":)| $[Filed under]: {$$tags}(:ifend:)  \%0a
+host:1232913387=127.0.0.1
+author:1232765312=DG3
+diff:1232765312:1232764843:=
+host:1232765312=127.0.0.1
+author:1232764843=DG3
+diff:1232764843:1232764246:=57c57%0a%3c (:if auth admin:)[[{=$FullName}?action=edit | $[edit]]](:ifend:)\%0a---%0a> (:if auth admin:)[[{*$FullName}?action=edit | $[edit]]](:ifend:)\%0a
+host:1232764843=127.0.0.1
+author:1232764246=DG3
+diff:1232764246:1232763904:=33c33%0a%3c ! [[{=$FullName}|{=$Title}]]%0a---%0a> !! [[{=$FullName}|{=$Title}]]%0a49c49%0a%3c ! $[Comments]%0a---%0a> !! $[Comments]%0a53c53%0a%3c !! [[{(bloggerBasePage {=$FullName})} | {{(bloggerBasePage {=$FullName})}=$Title}]](:ifend:)%0a---%0a> !!! [[{(bloggerBasePage {=$FullName})} | {{(bloggerBasePage {=$FullName})}=$Title}]](:ifend:)%0a
+host:1232764246=127.0.0.1
+author:1232763904=DG3
+diff:1232763904:1232763479:=6,8c6,8%0a%3c {(ftime fmt="%25B %25d, %25Y" when=@{$$date})} \%0a%3c (:if !equal "{$$tags}" "":)| $[Filed under]: {$$tags}(:ifend:)  \%0a%3c (:if auth edit:)%25blogger-edit-link%25%25item accesskey="$[ak_edit]"%25[[{$$group}.{$$page}?action=bloggeredit | $[(edit)]]]%25%25(:ifend:)%0a---%0a> {(ftime fmt="%25B %25d, %25Y" when=@{$$entrydate})} \%0a> (:if !equal "{$$entrytags}" "":)| $[Filed under]: {$$entrytags}(:ifend:)  \%0a> (:if auth edit:)%25blogger-edit-link%25%25item accesskey="$[ak_edit]"%25[[{$$group}.{$$name}?action=bloggeredit | $[(edit)]]]%25%25(:ifend:)%0a22c22%0a%3c (:div9991end:)(:includesection "#common-blog-foot page={*$Name} group={*$Group} date={*$:entrydate} tags='{*$:entrytags}'" {$Blogger_TemplateList}:)%0a---%0a> (:div9991end:)(:includesection "#common-blog-foot page={*$Name} group={*$Group} entrydate={*$:entrydate} entrytags='{*$:entrytags}'" {$Blogger_TemplateList}:)%0a39c39%0a%3c (:includesection "#common-blog-foot page={=$Name} group={=$Group} date={=$:entrydate} tags='{=$:entrytags}'" {$Blogger_TemplateList}:)%0a---%0a> (:includesection "#common-blog-foot page={=$Name} group={=$Group} entrydate={=$:entrydate} entrytags='{=$:entrytags}'" {$Blogger_TemplateList}:)%0a
+host:1232763904=127.0.0.1
+author:1232763479=DG3
+diff:1232763479:1232763324:=
+host:1232763479=127.0.0.1
+author:1232763324=DG3
+diff:1232763324:1232763295:=24c24%0a%3c (:includesection "#comments-pagelist pagename={*$Name} group={*$Group} entrycomments={*$:entrycomments} divid=commentblock":)%0a---%0a> (:includesection "#comments-pagelist pagename={*$Name} group={*$Group} entrycomments={*$:entrycomments} divid="commentblock":)%0a
+host:1232763324=127.0.0.1
+author:1232763295=DG3
+diff:1232763295:1232758954:=24c24%0a%3c (:includesection "#comments-pagelist pagename={*$Name} group={*$Group} entrycomments={*$:entrycomments} divid="commentblock":)%0a---%0a> (:includesection "#comments-pagelist pagename={*$Name} group={*$Group}" entrycomments={*$:entrycomments} divid="commentblock":)%0a
+host:1232763295=127.0.0.1
+author:1232758954=DG3
+diff:1232758954:1232758495:=55,57c55%0a%3c (:if [ auth admin && equal {=$:commentapproved} false ] :)\%0a%3c [[{*$FullName}?action=bloggerapprove&pn={=$FullName} | $[approve]]] | (:ifend:)\%0a%3c (:if auth admin:)[[{*$FullName}?action=edit | $[edit]]](:ifend:)\%0a---%0a> (:includesection "#comment-approve-edit-link commentapproved={=$:commentapproved} pagename={*$FullName} commentpage={=$FullName}":)%0a
+host:1232758954=127.0.0.1
+author:1232758495=DG3
+diff:1232758495:1232757275:=
+host:1232758495=127.0.0.1
+author:1232757275=DG3
+diff:1232757275:1232756410:=55c55,56%0a%3c (:includesection "#comment-approve-edit-link commentapproved={=$:commentapproved} pagename={*$FullName} commentpage={=$FullName}":)%0a---%0a> (:if [ auth admin && equal {=$:commentapproved} false ] :)\%0a> [[{*$FullName}?action=bloggerapprove&pn={=$FullName} | $[approve]]] | [[{=$FullName}?action=edit | $[edit]]](:ifend:)%0a
+host:1232757275=127.0.0.1
+author:1232756410=DG3
+diff:1232756410:1231983530:=24c24,28%0a%3c (:includesection "#comments-pagelist pagename={*$Name} group={*$Group}" entrycomments={*$:entrycomments} divid="commentblock":)%0a---%0a> (:if !equal {*$:entrycomments} "{$Blogger_CommentType_NONE}":)%0a> (:div9990 id="commentblock":)(:includesection "#comments-pagelist pagename={*$Name} group={*$Group}" {$Blogger_TemplateList}:)%0a> (:ifend:)(:if [ equal "{*$:entrycomments}" "{$Blogger_CommentType_OPEN}" && equal "{$Blogger_CommentsEnabled}" "true" ] :)(:pmform {$Blogger_CommentForm}:)%0a> (:div9990end:)%0a> (:ifend:)%0a
+host:1232756410=127.0.0.1
 author:1231983530=DaveG
 diff:1231983530:1231983240:=
 host:1231983530=127.0.0.1
