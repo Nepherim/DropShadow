@@ -1,0 +1,21 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4
+author=DaveG
+charset=ISO-8859-1
+csum=
+ctime=1228073573
+host=127.0.0.1
+name=Site.DropShadow-SiteHeader
+rev=4
+targets=
+text=(:if false:)%0a(:div class="sitelogo":)URL-TO-LOGO%0a(:divend:)%0a(:if:)%0a(:div1 class="siteheader":)%0a(:div2 class="sitetitle":)%0a! [[Path:/ | {$WikiTitle}]]%0a(:div2end:)%0a(:div3 class="sitetag":)%0aJust another PmWiki weblog%0a(:div3end:)%0a(:div1end:)
+time=1235347108
+author:1235347108=DaveG
+diff:1235347108:1235343661:=7c7%0a%3c ! [[Path:/ | {$WikiTitle}]]%0a---%0a> ! [[Path:/ | My Site Header]]%0a
+host:1235347108=127.0.0.1
+author:1235343661=DaveG
+diff:1235343661:1235343531:=
+host:1235343661=127.0.0.1
+author:1235343531=daveg
+diff:1235343531:1228090433:=7c7%0a%3c ! [[Path:/ | My Site Header]]%0a---%0a> [[http://pmwiki.com/Cookbook/DropShadow/ | Drop Shadow Theme]]%0a
+host:1235343531=127.0.0.1

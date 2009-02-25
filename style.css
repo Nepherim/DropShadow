@@ -14,14 +14,14 @@ body{
 	color: #333;
 	font-size: 11px;
 	font-family: Verdana, Helvetica, Sans-Serif;
-	margin: 0px auto 0px;
-	padding: 0px;
+	margin: 0 auto 0;
+	padding: 0;
 	}
 #wrap{
 	background: #FFF;
 	width: 720px;
-	margin: 0px auto 0px;
-	padding: 0px;
+	margin: 0 auto 0;
+	padding: 0;
 	}
 
 /***********************************************
@@ -40,16 +40,17 @@ a:hover	{
 #header{
 	width: 820px;
 	height: 80px;
-	margin: 0px auto 0px;
-	padding: 0px;
+	margin: 0 auto 0;
+	padding: 0;
 	overflow: hidden;
 	}
+#header h1 {margin:0;}
 .headerleft{
 	width: 350px;
 	color: #FFF;
 	float: left;
-	margin: 0px;
-	padding: 20px 0px 0px 0px;
+	margin: 0;
+	padding: 20px 0 0 0;
 	}
 .headerleft p{
 	margin-top: 0;
@@ -59,8 +60,8 @@ a:hover	{
 	font-size: 28px;
 	text-decoration: none;
 	font-weight: normal;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	}
 .headerleft a:hover{
 	text-decoration: none;
@@ -82,23 +83,23 @@ a:hover	{
 	width: 460px;
 	float: right;
 	text-align: right;
-	margin: 0px;
-	padding: 50px 0px 0px 0px;
+	margin: 0;
+	padding: 50px 0 0 0;
 	}
 .headerright li{
 	display: inline;
 	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	}
 .headerright ul{
-	margin: 0px;
+	margin: 0;
 	padding: 5px 10px 5px 10px;
 	}
 .headerright a, .headerright a:visited{
 	color: #FFF;
 	font-weight: bold;
-	margin: 0px;
+	margin: 0;
 	padding: 5px 10px 5px 10px;
 	text-decoration: none;
 	}
@@ -114,12 +115,12 @@ a:hover	{
 ************************************************/
 #content{
 	width: 780px;
-	margin: 0px auto 0px;
-	padding: 0px;
+	margin: 0 auto 0;
+	padding: 0;
 	}
 #content p{
-	padding: 0px 0px 15px 0px;
-	margin: 0px;
+	padding: 0 0 15px 0;
+	margin: 0;
 	line-height: 18px;
 	}
 #content a.pagegroup{
@@ -128,28 +129,28 @@ a:hover	{
 	font-size: 90%;
 	color: #444;
 	}
-#content h1, #commentblock h2{
+#content h1, #commentblock h2, #content h2 {
 	margin-top: 0;
 	padding-bottom: 1px;
 	border-bottom: 2px solid #444;
 	}
 #content h2{
-	margin-top: 0px;
+	margin-top: 0;
 	}
-#content h1, #commentblock h2{
+#content h1, #commentblock h2, #content h2 {
 	color: #333;
 	font-size: 24px;
 	font-family: Times New Roman, Verdana, Arial, Sans-Serif;
 	font-weight: normal;
-	padding: 2px 0px;
-	margin: 0px 0px 15px 0px;
+	padding: 2px 0;
+	margin: 0 0 15px 0;
 	border-bottom: 1px solid #C0C0C0;
 	}
-#content h1 a{
+#content h1 a, #content h2 a{
 	color: #333;
 	text-decoration: none;
 	}
-#content h1 a:hover{
+#content h1 a:hover, #content h2 a:hover {
 	text-decoration: none;
 	}
 #content p img{
@@ -161,68 +162,68 @@ a:hover	{
 #content img.wp-smiley{
 	float: none;
 	border: none;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	}
 #content img.wp-wink{
 	float: none;
 	border: none;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	}
 #contentleft{
 	float: left;
 	width: 500px;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	}
 #contentleft ol{
-	margin: 0px 0px 0px 20px;
-	padding: 0px 0px 10px 0px;
+	margin: 0 0 0 20px;
+	padding: 0 0 10px 0;
 	}
 #contentleft ol li{
-	margin: 0px 0px 0px 20px;
-	padding: 0px 0px 5px 0px;
+	margin: 0 0 0 20px;
+	padding: 0 0 5px 0;
 	}
 #contentleft ul{
 	list-style-type: square;
-	margin: 0px 0px 0px 20px;
-	padding: 0px 0px 10px 0px;
+	margin: 0 0 0 20px;
+	padding: 0 0 10px 0;
 	}
 #contentleft ul li{
 	list-style-type: square;
-	margin: 0px 0px 0px 20px;
-	padding: 0px 0px 5px 0px;
+	margin: 0 0 0 20px;
+	padding: 0 0 5px 0;
 	}
 blockquote, .blockquote, pre{
-	margin: 0px 25px 15px 25px;
-	padding: 0px 20px 0px 20px;
+	margin: 0 25px 15px 25px;
+	padding: 0 20px 0 20px;
 	background: #E8E8E8;
 	border-top: 2px solid #000000;
 	border-bottom: 1px solid #000000;
 	}
 #content blockquote p, #content .blockquote p{
-	margin: 0px 0px 10px 0px;
-	padding: 10px 0px 0px 0px;
+	margin: 0 0 10px 0;
+	padding: 10px 0 0 0;
 	}
 .postmeta{
 	width: 500px;
 	border-top: 1px solid #C0C0C0;
-	padding: 5px 0px 0px 0px;
-	margin: 0px 0px 50px 0px;
+	padding: 5px 0 0 0;
+	margin: 30px 0 50px 0;
 	}
 .postmetaleft{
 	float: left;
-	width: 295px;
-	margin: 0px;
-	padding: 0px;
+	width: 290px;
+	margin: 0;
+	padding: 0;
 	}
 .postmetaright{
 	float: right;
-	width: 200px;
+	width: 208px;
 	text-align: right;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	}
 
 /***********************************************
@@ -232,8 +233,8 @@ blockquote, .blockquote, pre{
 	color: #FFF;
 	float: right;
 	width: 250px;
-	margin: 0px;
-	padding: 10px 0px 20px 0px;
+	margin: 0;
+	padding: 10px 0 20px 0;
 	}
 #r_sidebar h2, #r_sidebar .sidehead{
 	background: #444;
@@ -241,8 +242,8 @@ blockquote, .blockquote, pre{
 	font-size: 11px;
 	font-family: Verdana, Helvetica, Sans-Serif;
 	font-weight: bold;
-	padding: 10px 0px 10px 10px;
-	margin: 10px 0px 0px 0px;
+	padding: 10px 0 10px 10px;
+	margin: 10px 0 0 0;
 	text-transform: uppercase;
 	border: none;
 	}
@@ -254,20 +255,20 @@ blockquote, .blockquote, pre{
 	}
 #r_sidebar ul{
 	list-style: none;
-	margin: 0px 0px 5px 0px;
-	padding: 0px;
+	margin: 0 0 5px 0;
+	padding: 0;
 	}
 #r_sidebar ul li{
 	display: inline;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	}
 #r_sidebar ul li a{
 	background: #444;
 	display: block;
 	color: #FFF;
 	text-decoration: none;
-	margin: 0px;
+	margin: 0;
 	padding: 5px 10px 5px 10px;
 	border-top: 1px solid #C0C0C0;
 	}
@@ -276,14 +277,14 @@ blockquote, .blockquote, pre{
 	}
 #r_sidebar p{
 	background: #444;
-	padding: 0px 10px 10px 10px;
-	margin: 0px;
+	padding: 0 10px 10px 10px;
+	margin: 0;
 	line-height: 17px;
 	}
 .search{
 	background: #444;
-	margin: 0px 0px 5px 0px;
-	padding: 0px 10px 10px 10px;
+	margin: 0 0 5px 0;
+	padding: 0 10px 10px 10px;
 	}
 .pageactions{
 	padding: 5px 5px;
@@ -317,8 +318,8 @@ blockquote, .blockquote, pre{
 	background: #333 url(images/bg2.gif) no-repeat top;
 	color: #FFF;
 	width: 960px;
-	margin: 0px auto 0px;
-	padding: 90px 0px 20px 0px;
+	margin: 0 auto 0;
+	padding: 90px 0 20px 0;
 	text-align: center;
 	}
 #footer a, #footer a:visited{
@@ -332,12 +333,12 @@ blockquote, .blockquote, pre{
 *	Search Form
 ************************************************/
 #searchdiv{
-	margin: 0px;
-	padding; 0px;
+	margin: 0;
+	padding; 0;
 	}
 #searchform{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	overflow: hidden;
 	}
 .searchButton, .searchBox{
@@ -345,7 +346,7 @@ blockquote, .blockquote, pre{
 	font-size: 11px;
 	font-family: Verdana, Helvetica, Sans-Serif;
 	padding: 2px;
-	margin: 0px;
+	margin: 0;
 	border: 1px solid #C0C0C0;
 	}
 .searchButton{
@@ -366,35 +367,35 @@ blockquote, .blockquote, pre{
 	color: #000000;
 	float: left;
 	padding: 20px 20px 10px 20px;
-	margin: 10px 0px 0px 0px;
+	margin: 10px 0 0 0;
 	border-top: 2px solid #000000;
 	border-bottom: 1px solid #000000;
 	}
 #commentblock ol{
 	list-style-type: square;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 10px 0px;
+	margin: 0 0 0 0;
+	padding: 0 0 10px 0;
 	}
 .commentdate{
 	font-size: 12px;
-	padding-left: 0px;
+	padding-left: 0;
 	}
 #commentlist li p{
 	margin-bottom: 8px;
 	line-height: 20px;
-	padding: 0px;
+	padding: 0;
 	}
 .commentname{
 	color: #333;
-	margin: 0px;
-	padding: 5px 5px 5px 0px;
+	margin: 0;
+	padding: 5px 5px 5px 0;
 	}
 .commentinfo{
 	clear: both;
 	}
 .commenttext{
 	clear: both;
-	margin: 3px 0px 20px 0px;
+	margin: 3px 0 20px 0;
 	padding: 20px 10px 5px 10px;
 	width: 390px;
 	display: block;
@@ -402,32 +403,32 @@ blockquote, .blockquote, pre{
 	}
 .commenttext-admin{
 	clear: both;
-	margin: 3px 0px 20px 0px;
+	margin: 3px 0 20px 0;
 	padding: 20px 10px 5px 10px;
 	width: 390px;
 	background: #FFF url(images/comment.gif) no-repeat top;
 	}
 #commentsformheader{
-	padding-left: 0px;
+	padding-left: 0;
 	}
 #commentsform{
 	text-align: center;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	}
 #commentsform form{
 	text-align: left;
-	margin: 0px;
+	margin: 0;
 	}
 #commentsform p{
-	margin: 0px;
+	margin: 0;
 	}
 #comment-text{
 	width: 99%;
 	}
 p.comments_link  img{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	border-top-style: none;
 	border-right-style: none;
 	border-bottom-style: none;
@@ -454,6 +455,18 @@ pre{
 	}
 .readmore {
 	display: block;
+	margin-top: 10px;
 	padding-bottom: 10px;
 	font-weight: bold;
+	}
+#wikiedit form img, #searchform fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
+#navigation .createlink { display: none; }
+.wikimessage {
+	color: red;
+	font-weight: bold;
+	font-size: 110%;
 	}
