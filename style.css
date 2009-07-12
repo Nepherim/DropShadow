@@ -37,25 +37,28 @@ a:hover	{
 /***********************************************
 *	Header
 ************************************************/
-#header{
+#header {
 	width: 820px;
-	height: 80px;
+	height: 100%;
 	margin: 0 auto 0;
 	padding: 0;
-	overflow: hidden;
 	}
-#header h1 {margin:0;}
-.headerleft{
-	width: 350px;
+#header .sitetitle {float:left}
+#header .sitetitle a{display: block}
+#header .sitetag {float: left; clear: left; width:100%}
+
+#header .sitetitle {margin:0;}
+#siteheader{
+	width: 450px;
 	color: #FFF;
 	float: left;
 	margin: 0;
 	padding: 20px 0 0 0;
 	}
-.headerleft p{
+#siteheader p{
 	margin-top: 0;
 	}
-.headerleft a, .headerleft a:visited{
+#siteheader a, #siteheader a:visited{
 	font-family: Times New Roman, Helvetica, Sans-Serif;
 	font-size: 28px;
 	text-decoration: none;
@@ -63,50 +66,47 @@ a:hover	{
 	padding: 0;
 	margin: 0;
 	}
-.headerleft a:hover{
+#siteheader a:hover{
 	text-decoration: none;
 	}
-.headerleft .sitelogo{
+#siteheader .sitelogo{
 	float: left;
 	margin-right: 10px;
 	}
-.headerleft .siteheader{
+#siteheader .siteheader{
 	float: left;
 	}
-.headerleft p{
+#siteheader p{
 	margin: 0;
 	}
-.headerleft .sitetag{
-	font-weight: bold;
-	}
-.headerright{
-	width: 460px;
+#header .headerright{
+	width: 360px;
 	float: right;
 	text-align: right;
 	margin: 0;
 	padding: 50px 0 0 0;
 	}
-.headerright li{
+#header .headerright li{
 	display: inline;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	}
-.headerright ul{
+#header .headerright ul{
 	margin: 0;
 	padding: 5px 10px 5px 10px;
 	}
-.headerright a, .headerright a:visited{
+#header .headerright a, #header .headerright a:visited{
 	color: #FFF;
 	font-weight: bold;
 	margin: 0;
 	padding: 5px 10px 5px 10px;
 	text-decoration: none;
 	}
-.headerright a:hover{
+#header .headerright a:hover{
 	text-decoration: none;
 	}
-.headerright li a.createlink{
+#header .headerright li a.createlink{
 	display:none;
 	}
 
@@ -329,6 +329,13 @@ blockquote, .blockquote, pre{
 	text-decoration: underline;
 	}
 
+#credits{
+	color: #999;
+	}
+#credits a{
+	color: #2F757F !important;
+	}
+	
 /***********************************************
 *	Search Form
 ************************************************/
@@ -470,3 +477,4 @@ pre{
 	font-weight: bold;
 	font-size: 110%;
 	}
+#wikitext .quickref p {padding: 0}
