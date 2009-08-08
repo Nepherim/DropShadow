@@ -80,7 +80,6 @@ a:hover	{
 	margin: 0;
 	}
 #header .headerright{
-	width: 360px;
 	float: right;
 	text-align: right;
 	margin: 0;
@@ -258,24 +257,22 @@ blockquote, .blockquote, pre{
 	margin: 0 0 5px 0;
 	padding: 0;
 	}
-#r_sidebar ul li{
-	display: inline;
-	padding: 0;
+#sidebar li, #r_sidebar li{
 	margin: 0;
+	display:inline;
 	}
-#r_sidebar ul li a{
-	background: #444;
+#sidebar li {
 	display: block;
+	padding: 5px 10px 5px 10px;
+	background: #444;
+	border-top: 1px solid #C0C0C0;
+	}
+#sidebar li a{
 	color: #FFF;
 	text-decoration: none;
 	margin: 0;
-	padding: 5px 10px 5px 10px;
-	border-top: 1px solid #C0C0C0;
 	}
-#r_sidebar ul li a:hover{
-	color: #FFF;
-	}
-#r_sidebar p{
+#sidebar p{
 	background: #444;
 	padding: 0 10px 10px 10px;
 	margin: 0;
@@ -289,12 +286,15 @@ blockquote, .blockquote, pre{
 .pageactions{
 	padding: 5px 5px;
 	}
+#Actions .pageactions ul{
+	text-align: right;
+	}
 #Actions .pageactions ul li a{
 	color: #444;
-	background: none !important;
-	display: inline !important;
-	padding: 0 1px  !important;
-	border: none !important;
+	background: none;
+	display: inline;
+	padding: 0 1px;
+	border: none;
 	}
 #Actions .pageactions ul li a:hover{
 	color: #444;
@@ -335,7 +335,7 @@ blockquote, .blockquote, pre{
 #credits a{
 	color: #2F757F !important;
 	}
-	
+
 /***********************************************
 *	Search Form
 ************************************************/
