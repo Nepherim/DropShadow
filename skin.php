@@ -9,7 +9,7 @@
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"DropShadow"';
-$FmtPV['$SkinVersion'] = '"1.0.0"';
+$FmtPV['$SkinVersion'] = '"2.0.1"';
 
 # Move any (:noleft:) or SetTmplDisplay('PageLeftFmt', 0); directives to variables for access in jScript.
 $FmtPV['$RightColumn'] = "\$GLOBALS['TmplDisplay']['PageRightFmt']";
