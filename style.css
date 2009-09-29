@@ -460,7 +460,12 @@ pre{
 	width:99%;
 	font-size:110%;
 	}
-.readmore {
+.page-navigation{clear:both; padding:20px 0}
+.blogit-next-entries a, .blogit-previous-entries a {font-size:130%; font-weight: bold;}
+.blogit-next-entries a {float:right;}
+.blogit-previous-entries a {float:left;}
+.blogit-listmore {text-align:right;}
+.blogit-readmore {
 	display: block;
 	margin-top: 10px;
 	padding-bottom: 10px;
