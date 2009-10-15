@@ -209,7 +209,7 @@ blockquote, .blockquote, pre{
 	width: 500px;
 	border-top: 1px solid #C0C0C0;
 	padding: 5px 0 0 0;
-	margin: 30px 0 50px 0;
+	margin: 10px 0 50px 0;
 	}
 .postmetaleft{
 	float: left;
@@ -387,7 +387,7 @@ blockquote, .blockquote, pre{
 	font-size: 12px;
 	padding-left: 0;
 	}
-#commentlist li p{
+.blogit-comment-list li p{
 	margin-bottom: 8px;
 	line-height: 20px;
 	padding: 0;
@@ -460,18 +460,17 @@ pre{
 	width:99%;
 	font-size:110%;
 	}
-.page-navigation{clear:both; padding:20px 0}
-.blogit-next-entries a, .blogit-previous-entries a {font-size:130%; font-weight: bold;}
-.blogit-next-entries a {float:right;}
-.blogit-previous-entries a {float:left;}
+.blogit-page-navigation{clear:both; padding:20px 0}
+.blogit-older-entries a, .blogit-newer-entries a {font-size:130%; font-weight: bold;}
+.blogit-older-entries a {float:right;}
+.blogit-newer-entries a {float:left;}
 .blogit-listmore {text-align:right;}
 .blogit-readmore {
 	display: block;
 	margin-top: 10px;
-	padding-bottom: 10px;
 	font-weight: bold;
 	}
-#wikiedit form img, #searchform fieldset {
+#wikiedit form img, fieldset {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -483,3 +482,4 @@ pre{
 	font-size: 110%;
 	}
 #wikitext .quickref p {padding: 0}
+.blogit-edit-link { padding-left: 10px; }

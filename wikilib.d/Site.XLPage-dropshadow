@@ -7,5 +7,5 @@ host=127.0.0.1
 name=Site.XLPage-dropshadow
 rev=3
 targets=
-text=### DropShadow Template%0a  'Find It' => '',%0a  'theme adapted by' => '',%0a  'powered by' => ''%0a
+text=### DropShadow Template%0a  'Find It' => '',%0a  'theme adapted by' => '',%0a  'powered by' => '',%0a  'Page last modified on {*$LastModified}' => ''%0a
 
