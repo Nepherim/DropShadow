@@ -54,6 +54,7 @@ a:hover	{
 	float: left;
 	margin: 0;
 	padding: 20px 0 0 0;
+	min-height: 53px;
 	}
 #siteheader p{
 	margin-top: 0;
@@ -173,7 +174,7 @@ a:hover	{
 #contentleft{
 	float: left;
 	width: 500px;
-	margin: 0;
+	margin: 20px 0 0;
 	padding: 0;
 	}
 #contentleft ol{
