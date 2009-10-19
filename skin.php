@@ -9,7 +9,7 @@
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"DropShadow"';
-$FmtPV['$SkinVersion'] = '"2.1.0"';
+$FmtPV['$SkinVersion'] = '"2.1.1"';
 
 global $PageLogoUrl, $PageLogoUrlHeight, $PageLogoUrlWidth, $HTMLStylesFmt;
 if (!empty($PageLogoUrl)) {
