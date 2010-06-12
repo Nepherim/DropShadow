@@ -2,14 +2,14 @@
 /* PmWiki DropShadow skin
  *
  * Examples at: http://pmwiki.com/Cookbook/DropShadow and http://solidgone.org/Skins/
- * Copyright (c) 2009 David Gilbert
+ * Copyright (c) 2010 David Gilbert
  * This work is licensed under a Creative Commons Attribution-Share Alike 3.0 United States License.
  * Please retain the links in the footer.
  * http://creativecommons.org/licenses/by-sa/3.0/us/
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"DropShadow"';
-$FmtPV['$SkinVersion'] = '"2.1.1"';
+$FmtPV['$SkinVersion'] = '"2.2.0"';
 
 global $PageLogoUrl, $PageLogoUrlHeight, $PageLogoUrlWidth, $HTMLStylesFmt;
 if (!empty($PageLogoUrl)) {
