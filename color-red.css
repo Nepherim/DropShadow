@@ -5,6 +5,6 @@ a, a:visited, #content h1 a:hover{
 #r_sidebar h2 a:hover, #r_sidebar .sidehead a:hover{
 	color: #D64108;
 	}
-#sidebar li.sfhover, #r_sidebar ul li a:hover, .headerright a:hover{
+#sidebar li.sfhover, #sidebar li:hover, .headerright a:hover{
 	background: #D64108;
 	}

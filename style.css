@@ -4,7 +4,7 @@
  *
  * Examples at: http://pmwiki.com/Cookbook/DropShadow and http://skins.solidgone.com/
  * Original by http://www.briangardner.com/themes/dropshadow-wordpress-theme.htm
- * Copyright (c) 2007 David Gilbert
+ * Copyright (c) 2011 David Gilbert
  * Dual licensed under the MIT and GPL licenses:
  *	 http://www.opensource.org/licenses/mit-license.php
  *	 http://www.gnu.org/licenses/gpl.html
@@ -449,6 +449,9 @@ p.comments_link  img{
 pre{
 	overflow: auto;
 	width: 82%;
+	}
+.vspace {
+	margin-top:1.2em;
 	}
 .diffbox{
 	width:100% !important;
