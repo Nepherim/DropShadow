@@ -182,13 +182,14 @@ a:hover	{
 	padding: 0 0 10px 0;
 	}
 #contentleft ol li{
-	margin: 0 0 0 20px;
+	margin: 15px 0 0 0px;
 	padding: 0 0 5px 0;
 	}
 #contentleft ul{
 	list-style-type: square;
 	margin: 0 0 0 20px;
 	padding: 0 0 10px 0;
+	float:right;
 	}
 #contentleft ul li{
 	list-style-type: square;
@@ -474,6 +475,7 @@ pre{
 	margin-top: 10px;
 	font-weight: bold;
 	}
+.blogit-admin-links{ margin: 0 !important; }
 #wikiedit form img, fieldset {
 	margin: 0;
 	padding: 0;
@@ -487,3 +489,4 @@ pre{
 	}
 #wikitext .quickref p {padding: 0}
 .blogit-edit-link { padding-left: 10px; }
+#wikitext ul.blogit-admin-links li {margin: 0; padding: 0px;}
